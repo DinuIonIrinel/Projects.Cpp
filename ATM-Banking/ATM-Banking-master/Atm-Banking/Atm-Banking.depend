@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1584121799 source:c:\users\programming\desktop\atm-banking\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<windows.h>
+
+1583927204 source:d:\programming\proiecte it\programe c++\proiecte si programe\atm-banking\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<windows.h>
+

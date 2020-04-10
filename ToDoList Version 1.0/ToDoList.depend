@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1578426653 source:d:\programming\proiecte it\programe c++\proiecte si programe\todolist\main.cpp
+	<iostream>
+	<windows.h>
+	<fstream>
+	<string.h>
+

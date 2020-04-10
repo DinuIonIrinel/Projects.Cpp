@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1579202671 source:d:\programming\proiecte it\programe c++\proiecte si programe\tictactoe game\main.cpp
+	<iostream>
+	<windows.h>
+

@@ -1,10 +1,19 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main() {
-  int n, sir[1005];
+  int n, a[1000];
   cin >> n;
-  for ( int i = 0; i < n; i++ ) {
-    cin >> sir[i];
+  for ( int  i = 1; i <= n; ++i ) {
+    cin >> a[i];
   }
+  int i = 1;
+  int j = n ;
+ while ( i <= j ) {
+   cout << a[i] << " ";
+   if ( i != j )
+    cout << a[j] << " ";
+   i++;
+   j--;
+ }
   return 0;
 }

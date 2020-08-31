@@ -1,13 +1,14 @@
-#include <iostream>
-#include <cmath>
+#include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-    double d1, d2 , l , a , p;
-    cin >> d1 >> d2;
-    l = sqrt(  ( d1 / 2 ) * ( d1 / 2 ) + ( d2 / 2 ) * ( d2 / 2 )  );
-    a = ( d1 * d2 ) / 2;
-    p = l * 4;
-    cout << p << " " << a;
-    return 0;
+int main() {
+  int n;
+  cin >> n;
+  for ( int i = 1; i <= n; i++ ) {
+    cout << ' ';
+    for ( int j = 1; j <= i; j++ ) {
+      cout <<  i;
+    }
+    cout << endl;
+  }
+  return 0;
 }

@@ -2,13 +2,13 @@
 using namespace std;
 int main() {
   int n = 1;
-  long long sum = 0;
+  int contor = 0;
   while ( n != 0 ) {
     cin >> n;
-    if ( n % 2 == 0 ) {
-      sum += n;
+    if ( n % 2 == 1 ) {
+      contor ++;
     }
   }
-  cout << sum;
+  cout << contor;
   return 0;
 }

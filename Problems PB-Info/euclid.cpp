@@ -1,11 +1,22 @@
 #include <iostream>
 using namespace std;
-int cmmdc(int a, int b) {
-    if ( b == 0 )
-        return a;
-    else
-        return cmmdc(b, a % b);
-}
 int main() {
-   cout << cmmdc(8,4);
+  int a, b, r;
+  cin >> a >> b;
+  while ( b != 0 ) {
+    r = a % b;
+    a = b;
+    b = r;
+  }
+  cout << a;
 }
+/*
+20 10 0
+10 0
+->10
+
+50 8 2
+8 2 0
+2 0
+->2
+*/

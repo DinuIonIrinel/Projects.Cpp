@@ -1,19 +1,26 @@
-#include <iostream>
-#include <fstream>
+#include <bits/stdc++.h>
 using namespace std;
-int main()
-{
-    long x , y , z , lungime;
-    ifstream f("coada.in");
-    ofstream g("coada.out");
-    f >> x >> y >> z;
-    lungime = y + z - x;
-    if ( x >= y || x >= z){
-        g << "-1";
-      }
-    else{
-        g << lungime;
-    }
-
-    return 0;
+int q[1005], st = 1, dr = 0;
+bool empty() {
+  return st > dr;
+}
+void pop() {
+  if (!empty())
+    st++;
+}
+int front() {
+  return q[st];
+}
+void push(int val) {
+  q[++dr] = val;
+}
+int main() {
+  push(4);
+  push(5);
+  push(6);
+  pop();
+  pop();
+  cout << front();
+  
+  return 0;
 }

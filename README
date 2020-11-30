@@ -1,0 +1,48 @@
+315 CA - DINU ION -IRINEL
+TEMA 2
+------------------------
+Programarea Calculatoarelor - Alocare dinamica
+
+Task 1:
+	
+	Implementare:
+
+Pentru rezolvarea taskului 1 am implementat o functie care va aloca un vector
+dinamic,apoi o functie care va aloca dinamic o matrice  si citeste datele de 
+la tastatura sub forma hexazecimala.In cadrul functie Task1 am numarat pentru
+inceput bytes de pe marginea hartii.Acestia sunt egali cu suma dintre prima linie
+si ultima linie inmultite cu 4 si numarul de linii ramase inmultite cu 2 deoarece
+pe fiecare dintre acestea se vor afla doi bytes necesari.Apoi am calculat suma 
+bytes-lor de pe contur,folosind un char pentru fiecare byte din fiecare element.
+In final am construit si am returnat media aritmetica a acestora.
+
+Task2:
+
+    Implementare:
+
+Pentru rezolvarea taskului 2 am implementat o funcie  in interiorul careia
+cites operatiile si in functie de acestea apelez swap sau modify.In cadrul 
+functie modifiy am realocat memorie necesara,daca zona pe care se executa modificarea
+se afla in afara hartii si apoi am schimbat vechea valoare cu cea noua.Functia 
+swap interschimba valorile bytes-lor.Daca dimenisunea este short interschimb
+primul cu ultimul byte,daca este de tip int,primul cu ultimul si al doilea cu al
+treilea iar daca este de tip char nu pot interschimba.Pentru functia delete voi 
+apela tot functia de modificare doar ca noua valoare va fi 0.
+In final afisez matricea modificata.
+ 
+Task3:
+
+	Implementare:
+
+In cadrul taskului 3 am implementat o functie check_area care se bazeaza pe 
+un algoritm recursiv de gasire a zonelor de zero.Daca un byte accesat este diferit 
+de zero sau daca ne aflam in afara matricii algoritmul se opreste.In caz contrat
+marcam byte-ul in care ne afla cu valoarea 2 ca fiind vizitat si ne expandam in
+sus, in jos, la dreapta si la stanga, pentru a gasi un nou byte egal cu 0.
+In finalul functie returnam suma,adica suprafata zonei de zerouri.In functia
+task3 apelam pentru fiecare element din matrice functia check_area si updatem
+maximul si respectiv pozitii fiecarei locatii.In final afisam pe ecran pozitiile
+si suprafata celei mai mari gauri negre.
+
+Functia free_memory() elibereaza toata memoria alocata dinamic, atat a vectorului
+cat si a matricii de date.
